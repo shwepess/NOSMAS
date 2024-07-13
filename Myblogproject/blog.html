@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8; /* grey white */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .header {
+            background-color: rgba(144, 16, 236, 0.974);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            font: bold;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px 0;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .container {
+            flex: 1;
+            padding: 70px;
+        }
+        .box {
+            background-color: white;
+            padding: 40px;
+            margin-bottom: 40px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            height: 300px;
+            width: 800px;
+        ;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(104, 11, 235, 0.935);
+            color: white;
+    
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>MY BLOG</h1>
+        <div class="nav">
+            <b><a href="#home">Home</a></b>
+            <b><a href="#about">About</a></b>
+            <b> <a href="#contact">contact</a></b>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <h2 style="color: black;">Blog Post Title </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at quam id eros fermentum consequat. Nulla facilisi.</p>
+        </div>
+        <div class="box">
+            <h2 style="color: black;">Blog Post Title </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque at quam id eros fermentum consequat. Nulla facilisi.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <b>@ 2023 My simple Blog</b>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body stretches to at least the height of the viewport */
+}
+
+header {
+    background-color: #333;
+    color: rgb(246, 132, 191);
+    text-align: center;
+    padding: 15px 0;
+}
+
+header .logo {
+    width: 100px; /* Adjust as needed */
+    height: auto;
+}
+
+header h1 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align:left;
+    background-color: #444;
+    font: stretch 10px; ultra-expanded
+    font font-weight: 50% ;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(249, 118, 177);
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.features {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin: 20px auto;
+}
+
+.features div {
+    flex: 1;
+    color: #01000d;
+    background-color: #fe64a3;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.features div h2 {
+    color: #333;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+#why-choose-us {
+    background-color: #040b0dda; /* Light blue background */
+    padding: 40px 20px;
+    font-style: italic;
+    text-align: center;
+}
+
+#why-choose-us h2 {
+    color: #f5f5f9e4; /* Dark blue heading color */
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.why-choose-us-content {
+    background-color: #7d7b7d;
+    padding: 20px;
+    font: 400;
+    font-weight: 800;
+    font-style:oblique;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align:left;
+    max-width: 2000px;
+    margin: 20px;;
+}
+
+
+
+
+.circle-container {
+    display: flex;
+    justify-content: space-around; /* Adjust spacing between circles */
+    max-width: 800px; /* Set a maximum width for the container */
+    margin: 20px auto; /* Center align horizontally */
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    background-color: #72EDF2; /* Light blue color */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+    border: 2px solid #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.circle p {
+    margin: 0;
+    padding: 10px;
+}
+
+.circle1 {
+    background-color: #FFCA28; /* Yellow color */
+}
+
+.circle2 {
+    background-color: #66BB6A; /* Green color */
+}
+
+.circle3 {
+    background-color: #EF5350; /* Red color */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto; /* Push footer to the bottom */
+    width: 100%;
+}
+
+
+
+
+</style>
+<body>
+
+    <header>
+        <img src="\Day4\images\Day7\Day8\DAY10\IMAGES\pic.png" alt="Logo" class="logo">
+        <h1>Welcome to Our Website</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Privacy</a></li>
+        </ul>
+    </nav>
+
+    <section id="why-choose-us">
+        <h2>Why Choose Us?</h2>
+        <div class="why-choose-us-content">
+            <p>Choose us for your IT projects and experience exceptional results driven by our extensive expertise, efficiency, and commitment to quality. Our team of experienced project managers handles everything from software development and IT service management to asset management and IT audits. We ensure projects are completed on time and within budget, adhering to the highest quality standards.</p>
+            <p>Our services are tailored to meet your specific needs, offering customized solutions that align with your business goals. We provide comprehensive coverage, including the entire software development lifecycle (SDLC), managed IT services, ITSM implementation, asset management, and robust data governance frameworks. Additionally, we conduct thorough IT audits to ensure security and compliance.</p>
+            <p>Beyond project completion, we offer ongoing support to ensure the continued success and smooth operation of your IT systems. Trust us to deliver exceptional outcomes and help you achieve your business objectives with our top-tier IT project management services. Contact us today to learn more and get started!</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div>
+            <h2>Expertise</h2>
+            <p>Our project managers are highly skilled and experienced in managing a wide range of projects.</p>
+        </div>
+        <div>
+            <h2>Efficiency & Quality</h2>
+            <p>We ensure that your projects are completed on time and within budget, and we adhere to the highest quality standards to deliver exceptional results.</p>
+        </div>
+        <div>
+            <h2>Customization & Support</h2>
+            <p>We tailor our services to meet your specific needs and business goals, providing ongoing support to ensure continued success.</p>
+        </div>
+        <div>
+            <h2>Outcome Focus</h2>
+            <p>We ensure that your projects are completed on time and within budget, maintaining the highest quality standards to achieve outstanding outcomes.</p>
+        </div>
+    </section>
+
+    <div class="circle-container">
+        <div class="circle circle1">
+            <p>"The best way to get a project done faster is to start sooner.”</p>
+        </div>
+    
+        <div class="circle circle2">
+            <p>“A goal without a timeline is just a dream.”</p>
+        </div>
+    
+        <div class="circle circle3">
+            <p>“The goal you set must be challenging”</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Your Company. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

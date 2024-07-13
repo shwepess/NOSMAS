@@ -1,0 +1,86 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffcccb; /* Pink background */
+}
+
+.audio-control {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+.omoge-section {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    text-align: center;
+}
+
+.omoge1 {
+    background-image: url('https://images.unsplash.com/photo-1493246507139-91e8fad9978e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGJlYXV0aWZ1bCUyMGJhY2tncm91bmR8ZW58MHx8fHwxNjI4MjMzNzA3&ixlib=rb-1.2.1&q=80&w=1080');
+    background-color: gold; /* Gold background */
+}
+
+.omoge2 {
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDR8fGJlYXV0aWZ1bCUyMGJhY2tncm91bmR8ZW58MHx8fHwxNjI4MjMzNzA3&ixlib=rb-1.2.1&q=80&w=1080');
+    background-color: red; /* Unique background color */
+}
+
+.omoge3 {
+    background-image: url('https://images.unsplash.com/photo-1502082553048-f009c37129b9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDF8fGJlYXV0aWZ1bCUyMGJhY2tncm91bmR8ZW58MHx8fHwxNjI4MjMzNzA3&ixlib=rb-1.2.1&q=80&w=1080');
+    background-color: blue; /* Unique background color */
+}
+
+.content-section {
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.flower {
+    width: 50px;
+    height: 50px;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/616/616451.png');
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+.omoge-title {
+    font-family: 'Bungee', sans-serif; /* Bogus font */
+    font-size: 3rem;
+}
+
+.gold-text {
+    color: gold; /* Gold color for text */
+}
+
+.lyrics {
+    font-family: 'Bungee', sans-serif; /* Bogus font */
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ff1493; /* Bright pink color */
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* White background with transparency */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}

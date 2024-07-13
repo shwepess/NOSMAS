@@ -1,0 +1,81 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+        .header, .footer {
+            background-color: #4b2e2e;
+            color: white;
+            padding: 20px;
+        }
+        .header h1 {
+            display: inline;
+        }
+        .nav {
+            float: right;
+        }
+        .nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px;
+            flex-grow: 1;
+            align-items: center; /* Center vertically */
+        }
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            gap: 10px; /* Space between product boxes */
+        }
+        .product-box {
+            background-color: white;
+            border: 1px solid #ddd;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            text-align: center;
+            width: 500px;
+            height: 300px; /* Ensure square shape */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .product-name {
+            font-size: 18px;
+        }
+        .product-name-large {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .price {
+            color: #333;
+            font-size: 20px;
+            margin: 10px 0;
+        }
+        .add-to-cart {
+            background-color: green;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+.footer {
+        background-color: #040202d1;
+        text-align: center;
+        padding: 10px;
+        color: #faf9f9;
+        margin-top: auto; /* Push footer to the bottom */
+        font-display:unset;
+        font-size: larger;
+        border-top: 2px solid white;
+        width:100%
+}

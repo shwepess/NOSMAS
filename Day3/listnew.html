@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First Path CREATED</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
 </head>
 <body>
-    <hr>
-    <H1>THE PATH WAS CREATED SUCCESSFULLY</H1>
-    <H2>THE PATH WAS CREATED SUCCESSFULLY</H2>
-    <H3>THE PATH WAS CREATED SUCCESSFULLY</H3>
-    <H4>THE PATH WAS CREATED SUCCESSFULLY</H4>
-    <H5>THE PATH WAS CREATED SUCCESSFULLY</H5>
-    
-    <p></p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi dolores voluptate, modi, libero dolore officia nihil reprehenderit ipsam illum rerum, ducimus laudantium voluptates. Laboriosam, voluptatem magni sint sapiente repudiandae facilis.</p>
+    <h1>Contact Us</h1>
+    <form action="#" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label>Gender:</label><br>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+        
+        <label>Select Your Interests:</label><br>
+        <input type="checkbox" id="Swimming" name="interests" value="interest1">
+        <label for="Yoga"></label><br>
+        <input type="checkbox" id="interest2" name="interests" value="interest2">
+        <label for="Karate">Interest 2</label><br>
+        <input type="checkbox" id="interest3" name="interests" value="interest3">
+        <label for="Jogging">Interest 3</label><br><br>
+        
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>

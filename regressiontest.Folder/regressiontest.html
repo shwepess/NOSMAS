@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <style>
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+.parallax-section {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+  text-shadow: 1px 1px 2px black;
+}
+
+.parallax1 {
+  background-image: url('https://picsum.photos/seed/picsum/1920/1080');
+}
+
+.parallax2 {
+  background-image: url('https://picsum.photos/seed/picsum/1920/1080');
+}
+
+.parallax3 {
+  background-image: url('https://picsum.photos/seed/picsum/1920/1080');
+}
+
+.content-section {
+  padding: 20px;
+  text-align: center;
+  background-color: #f0f0f0;
+}
+
+.content-section p {
+  font-size: 1.5em;
+  margin: 0;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="parallax-section parallax1">
+        <h1>OMOGE Section 1</h1>
+      </div>
+      <div class="content-section">
+        <p>This is some regular content. Scroll down to see more parallax effect.</p>
+      </div>
+      <div class="parallax-section parallax2">
+        <h1>OMOGE Section 2</h1>
+      </div>
+      <div class="content-section">
+        <p>More regular content. Keep scrolling!</p>
+      </div>
+      <div class="parallax-section parallax3">
+        <h1>OMOGE Section 3</h1>
+      </div>
+      <div class="content-section">
+        <p>This is the end of the parallax effect demo.</p>
+      </div>
+      
+</body>
+</html>

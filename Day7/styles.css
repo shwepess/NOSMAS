@@ -1,0 +1,23 @@
+body
+{
+
+    font-family: Arial, sans-serif;
+    padding: 10px;
+    border: 1px solid #df1717;
+    margin: 2 px; 
+    background-color: #3994ee;
+    font-size: large;
+
+}
+
+h2{
+
+
+    padding:5px;
+    border:1px solid #f6f8f9;
+    margin: 2px;
+    background-color: #4934c5;
+
+}
+
+
