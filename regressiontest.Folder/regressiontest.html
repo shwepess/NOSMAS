@@ -3,75 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing</title>
-    <style>
+    <title>Grandma's Apple Pie</title>
 
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  scroll-behavior: smooth;
-}
-.parallax-section {
-  height: 100vh;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  font-size: 3em;
-  text-shadow: 1px 1px 2px black;
-}
-
-.parallax1 {
-  background-image: url('https://picsum.photos/seed/picsum/1920/1080');
-}
-
-.parallax2 {
-  background-image: url('https://picsum.photos/seed/picsum/1920/1080');
-}
-
-.parallax3 {
-  background-image: url('https://picsum.photos/seed/picsum/1920/1080');
-}
-
-.content-section {
-  padding: 20px;
-  text-align: center;
-  background-color: #f0f0f0;
-}
-
-.content-section p {
-  font-size: 1.5em;
-  margin: 0;
-}
-
-
-    </style>
 </head>
+<style>
+body, h1, h2, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background-color: aqua;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Container styling */
+.container {
+  display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: blanchedalmond;
+    border-radius: 10px;
+}
+
+/* Box styling */
+.box {
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+   
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+</style>
+
 <body>
-    <div class="parallax-section parallax1">
-        <h1>OMOGE Section 1</h1>
-      </div>
-      <div class="content-section">
-        <p>This is some regular content. Scroll down to see more parallax effect.</p>
-      </div>
-      <div class="parallax-section parallax2">
-        <h1>OMOGE Section 2</h1>
-      </div>
-      <div class="content-section">
-        <p>More regular content. Keep scrolling!</p>
-      </div>
-      <div class="parallax-section parallax3">
-        <h1>OMOGE Section 3</h1>
-      </div>
-      <div class="content-section">
-        <p>This is the end of the parallax effect demo.</p>
-      </div>
-      
+    <header>
+        <h1>Grandma's Secret Apple Pie</h1>
+    </header>
+
+    <div class="container">
+        <div class="box">
+            <p>This apple pie recipe has been in my family for generations and never fails to delight.</p>
+        </div>
+
+        <div class="box">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>1/2 cup sugar</li>
+                <li>1/2 cup sugar</li>
+                <li>1/2 cup sugar</li>
+            </ul>
+        </div>
+
+        <div class="box">
+            <h2>Instructions</h2>
+            <ol>
+                <li>Preheat oven to 375°F (190°C).</li>
+                <li>Mix all ingredients together in a large bowl.</li>
+                <li>Bake for 45 minutes or until golden brown.</li>
+            </ol>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 by Sadeed. All rights reserved.</p>
+    </footer>
 </body>
 </html>

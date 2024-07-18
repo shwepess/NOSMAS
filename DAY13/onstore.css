@@ -3,12 +3,12 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #f2f3e5;
     display: flex;
     flex-direction: column;
         .header, .footer {
-            background-color: #4b2e2e;
-            color: white;
+            background-color: #f3570ee5;
+            color: rgb(8, 3, 3);
             padding: 20px;
         }
         .header h1 {
@@ -18,29 +18,31 @@ html, body {
             float: right;
         }
         .nav a {
-            color: white;
+            color: rgb(19, 8, 8);
             text-decoration: none;
             margin: 0 10px;
         }
         .container {
             display: flex;
             justify-content: space-around;
+            border-radius: 20%;
             padding: 40px;
             flex-grow: 1;
             align-items: center; /* Center vertically */
         }
         .box {
             display: flex;
+            border-radius: 20%;
             flex-direction: column;
             align-items: center;
             justify-content: space-around;
             gap: 10px; /* Space between product boxes */
         }
         .product-box {
-            background-color: white;
+            background-color: rgba(75, 74, 74, 0.87);
             border: 1px solid #ddd;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            box-shadow: 0 0 10px rgba(253, 253, 253, 0.1);
             text-align: center;
             width: 500px;
             height: 300px; /* Ensure square shape */
@@ -51,13 +53,15 @@ html, body {
         }
         .product-name {
             font-size: 18px;
+            color: #bec7f3;
         }
         .product-name-large {
             font-size: 24px;
             font-weight: bold;
+            color: #c8caec;
         }
         .price {
-            color: #333;
+            color: #c3bcece8;
             font-size: 20px;
             margin: 10px 0;
         }
@@ -69,10 +73,10 @@ html, body {
             border-radius: 5px;
         }
 .footer {
-        background-color: #040202d1;
+        background-color: #f74904d1;
         text-align: center;
         padding: 10px;
-        color: #faf9f9;
+        color: #0a0404;
         margin-top: auto; /* Push footer to the bottom */
         font-display:unset;
         font-size: larger;
