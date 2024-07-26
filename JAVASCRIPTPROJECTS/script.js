@@ -1,0 +1,1 @@
+//document.getElementById("demo").innerText="JavaScript is the programming language of the We"

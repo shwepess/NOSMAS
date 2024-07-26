@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Time Zone</title>
+    <style>
+        body {
+            background-color: black;
+            color: white; /* This makes the text color white for better visibility against the black background */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #clock {
+            width: 300px;
+            height: 300px;
+            border: 10px solid white;
+            border-radius: 50%;
+            position: relative;
+        }
+        .hand {
+            width: 50%;
+            height: 6px;
+            background-color: white;
+            position: absolute;
+            top: 50%;
+            transform-origin: 100%;
+            transform: rotate(90deg);
+        }
+        .second-hand {
+            background-color: red;
+            height: 2px;
+        }
+        .bird {
+            width: 50px;
+            height: 50px;
+            background: url('https://via.placeholder.com/50?text=Bird') no-repeat center center;
+            background-size: cover;
+            position: absolute;
+            animation: fly 5s linear infinite;
+        }
+        @keyframes fly {
+            0% {
+                left: -50px;
+                top: 50%;
+            }
+            50% {
+                left: calc(100% - 50px);
+                top: 10%;
+            }
+            100% {
+                left: -50px;
+                top: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <h1><b>Show Current Time</b></h1>
+
+    <div id="clock">
+        <div id="hour-hand" class="hand"></div>
+        <div id="minute-hand" class="hand"></div>
+        <div id="second-hand" class="hand second-hand"></div>
+        <div class="bird"></div>
+    </div>
+    
+    <button onclick="document.getElementById('demo').innerHTML = new Date().toLocaleTimeString()">Click Me</button>
+    <p id="demo">Time is: </p>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            const seconds = now.getSeconds();
+            const minutes = now.getMinutes();
+            const hours = now.getHours();
+            
+            const secondHand = document.getElementById('second-hand');
+            const minuteHand = document.getElementById('minute-hand');
+            const hourHand = document.getElementById('hour-hand');
+            
+            const secondDeg = ((seconds / 60) * 360) + 90;
+            const minuteDeg = ((minutes / 60) * 360) + 90;
+            const hourDeg = ((hours / 12) * 360) + 90;
+            
+            secondHand.style.transform = `rotate(${secondDeg}deg)`;
+            minuteHand.style.transform = `rotate(${minuteDeg}deg)`;
+            hourHand.style.transform = `rotate(${hourDeg}deg)`;
+        }
+        
+        setInterval(updateClock, 1000);
+        updateClock(); // initial call to set the clock hands at the current time
+    </script>
+</body>
+</html>
+
