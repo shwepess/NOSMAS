@@ -1,0 +1,185 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: #ffd700;
+    padding: 15px 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #ffd700;
+    min-height: 400px;
+}
+
+.parallax h1 {
+    font-size: 48px;
+}
+
+#event-details, #rsvp, #hotel, #gallery, #contact {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffd700;
+}
+
+#rsvp-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#rsvp-form input, #rsvp-form select, #rsvp-form button {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#rsvp-form button {
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-grid img {
+    width: 200px;
+    height: auto;
+    border: 2px solid #ffd700;
+    border-radius: 10px;
+}
+
+#map iframe {
+    border: 0;
+    width: 100%;
+    height: 450px;
+}
+
+footer {
+    background-color: #111;
+    color: #ffd700;
+    text-align: center;
+    padding: 10px 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #000;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    color: #ffd700;
+    padding: 15px 20px;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section#invite {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+#invite-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#invite-form input, #invite-form button {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    max-width: 300px;
+}
+
+#invite-form button {
+    background-color: #ffd700;
+    color: #000;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #111;
+    color: #ffd700;
+    text-align: center;
+    padding: 10px 0;
+}
