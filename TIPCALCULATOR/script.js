@@ -13,3 +13,4 @@ function calculateTip() {
     document.getElementById('tipAmount').innerText = tipAmount.toFixed(2);
     document.getElementById('totalAmount').innerText = totalAmount.toFixed(2);
 }
+   

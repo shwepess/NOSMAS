@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #f7da59;
+    background-image: url('images/a3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1em;
+    text-align: center;
+}
+
+header .logo {
+    color: #f7da59;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #f7da59;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.parallax {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+}
+
+.parallax .background-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.parallax .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f7da59;
+}
+
+.celebrant-image {
+    width: 500_px;
+    height: 500px;
+    border-radius: 50%;
+    border: 5px solid #f7da59;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+}
+
+section {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+section img {
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #f7da59;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 1em;
+    color: #f7da59;
+}

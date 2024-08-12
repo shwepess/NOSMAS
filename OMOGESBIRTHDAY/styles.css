@@ -1,0 +1,319 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #403d39;
+    color: #f5cb5c;
+    background-image: url('/OMOGESBIRTHDAY/omogesbuffday/a2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+header {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 1em;
+    text-align: center;
+}
+
+header .logo {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 2.5em;
+    font-weight: bold;
+    display: inline-block;
+    animation: rainbow-text 10s infinite;
+}
+
+@keyframes rainbow-text {
+    0% { color: #FF69B4; }
+    14% { color: #FF8C00; }
+    28% { color: #FFD700; }
+    42% { color: #32CD32; }
+    56% { color: #1E90FF; }
+    70% { color: #4B0082; }
+    84% { color: #EE82EE; }
+    100% { color: #FF69B4; }
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #f7da59;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #FF69B4;
+}
+
+/* Parallax Section */
+.parallax {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 100px 0;
+    flex: 1;
+    
+}
+
+.parallax .background-image {
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+    border-radius: 15px;
+    padding: 10px;
+    
+}
+
+.parallax .content {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #f7da59; 
+}
+
+.parallax h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.parallax p {
+    font-size: 1.5em;
+}
+
+/* Invitation Content Section */
+section {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+section img {
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+/* Button Styles */
+.btn, button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #000;
+    background-color: #f7da59;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover, button:hover {
+    background-color: #e0c347;
+}
+
+/* Footer Styles */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    text-align: center;
+    padding: 1em;
+    color: #f7da59;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Password Form */
+#password-form {
+    margin-top: 20px;
+}
+
+#password-input {
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Transitioning Text */
+.slide-text {
+    font-family: 'Brush Script MT', cursive;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-align: center;
+    color: #f1f0e8;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 87%;
+    height: 130px;
+    padding: 35px;
+    display: inline-block;
+    border: 2px solid #f7da59;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+    animation: slide-in 30s ease-in-out, fade-in 30s ease-in-out;
+    font-weight: bold;
+    position: relative;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+@keyframes fade-in {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+
+/* General styles for the invitation section */
+.invitation-section {
+    background: linear-gradient(135deg, #f5cb5c, #403d39);
+    color: #f5cb5c;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    margin: 20px;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background artwork */
+.invitation-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/path/to/artwork.jpg') no-repeat center center;
+    background-size: cover;
+    opacity: 0.1;
+    z-index: 1;
+}
+
+/* Styles for heading */
+.invitation-section h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #1e90ff;
+    font-family: 'Brush Script MT', cursive;
+    position: relative;
+    z-index: 2;
+    background: -webkit-linear-gradient(#f5cb5c, #1e90ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Styles for paragraphs and list */
+.invitation-section .invitation-details {
+    position: relative;
+    z-index: 2;
+}
+
+.invitation-section p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.invitation-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.invitation-section ul li {
+    font-size: 1.1em;
+    margin: 5px 0;
+    color: #f7da59;
+}
+
+.invitation-section strong {
+    color: #FFD700; /* Gold color for strong text */
+}
+
+@media (max-width: 768px) {
+    .invitation-section {
+        padding: 20px;
+        font-size: 1em;
+    }
+    
+    .invitation-section h2 {
+        font-size: 2em;
+    }
+    
+    .invitation-section p, .invitation-section ul li {
+        font-size: 1em;
+    }
+}
+   /* Hide audio controls */
+   .audio1 {
+    display: none;
+}
