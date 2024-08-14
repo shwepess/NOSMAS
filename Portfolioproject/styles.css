@@ -9,7 +9,7 @@ body {
 
 /* Links */
 a {
-  color: #1e90ff; /* Bright blue */
+  color: #0588fa; /* Bright blue */
   text-decoration: none;
 }
 
@@ -18,7 +18,7 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Header */
+/*Main Header */
 header {
   position: relative;
   background: linear-gradient(135deg, rgba(30, 144, 255, 0.7), rgba(255, 69, 0, 0.7));
