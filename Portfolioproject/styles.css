@@ -36,25 +36,69 @@ header .text-shadow {
 
 @keyframes headerAnimation {
   0% {
-      background: linear-gradient(135deg, rgba(30, 144, 255, 0.7), rgba(255, 69, 0, 0.7));
+    background: linear-gradient(135deg, rgba(30, 144, 255, 0.7), rgba(255, 69, 0, 0.7));
   }
   100% {
-      background: linear-gradient(135deg, rgba(0, 191, 255, 0.7), rgba(255, 105, 180, 0.7));
+    background: linear-gradient(135deg, rgba(0, 191, 255, 0.7), rgba(255, 105, 180, 0.7));
   }
 }
 
 @keyframes glowAnimation {
   0% {
-      text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
   }
   100% {
-      text-shadow: 0 0 25px rgba(255, 255, 255, 1);
+    text-shadow: 0 0 25px rgba(255, 255, 255, 1);
+  }
+}
+
+/* Glowing Headers */
+.glowing-header {
+  font-family: 'Courier New', monospace; /* Unique font style for a developer look */
+  color: #c0c0c0; /* Bright silver */
+  text-shadow: 0 0 10px #c0c0c0, 0 0 20px #c0c0c0, 0 0 30px #c0c0c0;
+  animation: glowingTextAnimation 2s infinite alternate;
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Header Animation */
+@keyframes glowingTextAnimation {
+  0% {
+    text-shadow: 0 0 10px #c0c0c0, 0 0 20px #c0c0c0, 0 0 30px #c0c0c0;
+  }
+  100% {
+    text-shadow: 0 0 20px #c0c0c0, 0 0 40px #c0c0c0, 0 0 60px #c0c0c0;
   }
 }
 
 /* Skills Section */
 .bg-light {
   background-color: #2e2e2e !important; /* Slightly lighter background */
+}
+.skill-list li {
+  padding-left: 20px; /* Adds 5 spaces of indentation */
+}
+
+/* Glowing Animated Sections */
+.glow-section {
+  font-family: 'Courier New', monospace; /* Unique font style for a developer look */
+  color: #fff;
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 30px #00ffff, 0 0 40px #ff00ff;
+  animation: glowAnimation 1.5s infinite alternate;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  padding: rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.glow-section:hover {
+  transform: scale(1.05);
 }
 
 /* Card Styles */
@@ -112,18 +156,13 @@ footer {
 
 @keyframes footerAnimation {
   0% {
-      background: linear-gradient(135deg, rgba(30, 144, 255, 0.7), rgba(255, 69, 0, 0.7));
+    background: linear-gradient(135deg, rgba(30, 144, 255, 0.7), rgba(255, 69, 0, 0.7));
   }
   100% {
-      background: linear-gradient(135deg, rgba(0, 191, 255, 0.7), rgba(255, 105, 180, 0.7));
+    background: linear-gradient(135deg, rgba(0, 191, 255, 0.7), rgba(255, 105, 180, 0.7));
   }
 }
 
-/* Projects Section */
-.card-img-top {
-  height: 200px;
-  object-fit: cover;
-}
 /* Profile Picture Container */
 .profile-picture {
   position: relative;
@@ -159,4 +198,45 @@ footer {
   border-radius: 50%; /* Ensures the image is circular */
   position: relative; /* Ensures image is above the border */
   z-index: 0; /* Places image below the border */
+}
+.glowing-header {
+  font-family: 'Bebas Neue', cursive;
+  font-size: 2.5rem;
+  color: #f1f1f1;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.glowing-header::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(45deg, #ebe4e6, #4c4b4a);
+  background-size: 100% 100%;
+  filter: blur(5px);
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  animation: glowing 10s ease infinite;
+}
+
+.glowing-header:hover {
+  color: #ffffff;
+  text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #f0dfe5, 0 0 40px #ebdfe3, 0 0 50px #e193ad, 0 0 60px #ff0056, 0 0 70px #ff0056;
+}
+
+@keyframes glowing {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
 }
